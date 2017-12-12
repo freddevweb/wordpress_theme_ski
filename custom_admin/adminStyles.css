@@ -1,0 +1,108 @@
+h1 {
+	text-align: center;
+	margin: 50px 0px;
+}
+
+form {
+	margin-left: 50px;
+	width: 100%;
+	align-items: center;
+}
+
+#formcolor label {
+	display: flex;
+	justify-content: space-between;
+	
+}
+
+#formcolor {
+	width: 225px;
+}
+
+#formcolor input[type=submit] {
+	width: 100%;
+}
+
+
+/* 
+	positions
+*/
+#formPosition {
+	font-size: 1.5em;
+	display: flex;
+	flex-direction: column;
+}
+#formPosition label {
+	display: block;
+}
+#formPosition span {
+	text-align: center;
+}
+.block {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+#formPosition label span {
+	text-align: center;
+	margin-bottom: 10px;
+
+}
+#position label, #none label {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#position input[type=radio],
+#none input[type=radio] {
+	margin-top: 10px;
+}
+
+/* illustration widget position */
+
+#formPosition .illustrW, #formPosition .illustr {
+	width: 200px;
+	height: 100px;
+	border: 1px solid rgb(98, 98, 255);
+}
+
+#formPosition .illutr-title, #formPosition .illust-content {
+	width: calc(100% - 14px);
+	height: 10px;
+	margin: 5px 5px;
+}
+#formPosition .illutr-title {
+	border: 2px solid rgb(98, 98, 255);
+}
+
+#formPosition .illustr .illust-content {
+	height: calc( 100% - 32px);
+	border: 2px solid rgb(98, 98, 255);
+}
+#formPosition .illustrW .illust-content {
+	border: none;
+	display: flex;
+	justify-content: space-around;
+	height: calc(100% - 30px );
+}
+
+#formPosition .illustrW .widget {
+	border: 2px solid rgb(98, 98, 255);
+	width: 20%;
+	height: 100%;
+	margin: 0px;
+}
+
+
+#formPosition .illustrW .text {
+	border: 2px solid rgb(98, 98, 255);
+	width: 60%;
+	height: 100%;
+}
+
+#formPosition input[type=submit] {
+	margin: 50px 0px;
+	width: 100px; 
+}
+
+

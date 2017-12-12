@@ -1,0 +1,23 @@
+T.P Wordpress
+
+1. Theming
+ - Créer un thème avec les contraintes suivantes : 
+
+	- Template de page avec choix de widget gauche et droite
+	- Template de page no-widget
+	- Affichage des catégories en flex avec 3 colonnes
+
+Attention :  Rester sur le même “thème” ou la même “charte” que vous aurez mis en place pour les pages restantes. En gros, il ne faut pas qu’il existe un endroit ou une page s’affiche n’importe comment, mais suit forcément le schéma de base de votre thème...
+
+	- Template de page d’accueil avec slider en haut de page
+	- Custom post-types de type slider (On utilisera  au minimum l’image a la une pour l’affichage) 
+	- Ce custom post qui alimente le template de page d’accueil (au niveau du slider)
+	- Personnalisation des styles généraux du thème
+
+II. Plugin
+	- Créer un plugin de pop-up
+	- On peut gérer une liste de fenêtre pop up qui s’affichent à l’ouverture de la page
+	- On peut ajouter nos pop-up sur des pages à l’aide de shortcode
+
+
+on
