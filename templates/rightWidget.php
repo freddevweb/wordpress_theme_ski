@@ -11,7 +11,9 @@ function addTemplateNoWidgetStyles(){
 
 
 get_header();
-get_custom_styles()
+get_custom_styles();
+$elt = get_theme_support( 'custom-background' );
+
 ?>
 <div class="template-container">
 	
@@ -38,4 +40,7 @@ get_custom_styles()
 	</div>
 </div>
 <?php
+
+var_dump($elt);
+
 

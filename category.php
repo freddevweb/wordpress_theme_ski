@@ -13,7 +13,7 @@ function add_category_scripts(){
 	wp_enqueue_style( "categoryStyles", get_template_directory_uri("./")."/css/categoryStyles.css" );
 }
 
-
+get_theme_support( 'custom_background' );
 get_header(); 
 ?>
 <h1 class='title-cat'><?php single_cat_title() ?></h1>
@@ -52,8 +52,7 @@ get_header();
 				</div>
 				<?php
 				$i++;
-			}	
-					
+			}
 	 	} ?>
 	</div>
 

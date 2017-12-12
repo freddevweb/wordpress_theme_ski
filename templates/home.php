@@ -16,6 +16,7 @@ function add_scripts(){
 $comments = new WP_Query( [
 	"post_type" => "comments"
 ]);
+get_theme_support( 'custom_background' );
 get_header();
 ?>
 <div class="slider-container">

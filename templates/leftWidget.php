@@ -10,7 +10,8 @@ function addTemplateNoWidgetStyles(){
 }
 
 get_header();
-get_custom_styles()
+get_custom_styles();
+get_theme_support( 'custom_background' );
 ?>
 <div class="template-container">
 	<div class="sidebar">

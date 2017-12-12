@@ -1,0 +1,8 @@
+/* set background image */
+.bgimg-main {
+	background-color: red;
+}
+img {
+	width: 20px;
+	height: auto;
+}

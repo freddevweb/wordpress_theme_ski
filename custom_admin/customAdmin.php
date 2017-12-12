@@ -8,10 +8,9 @@ function addScripts(){
 
 add_action( 'admin_enqueue_scripts', 'load_script' );
 function load_script(){
-	wp_enqueue_script("jscolor", get_template_directory_uri()."/js/jscolor.js");
+	wp_enqueue_script("jscolor", get_template_directory_uri("./")."/js/jscolor.js");
 
-	wp_enqueue_script( "", get_template_directory_uri()."/js/jscolor.js");
-
+	wp_enqueue_script( "themecustommedia", get_template_directory_uri("./")."/js/media.js", array( 'jquery' ), true);
 }
 
 // admin menu
@@ -46,6 +45,14 @@ function generate_theme_menu(){
 	// 	"menu_widget_position", 
 	// 	"generateSubMenuWidgetsPosition" 
 	// );
+	add_submenu_page( 
+		"fredtheme",
+		"set_background_image",
+		"Background image",
+		"administrator",
+		"background_image", 
+		"generateSubMenuBgImg" 
+	);
 }
 
 function generate_theme_menu_page(){
@@ -57,11 +64,12 @@ function generate_theme_menu_page(){
 function generateSubMenuColor(){
 	include 'pages/template_color.php';
 }
-
 function generateSubMenuWidgetsPosition(){
 	include 'pages/template_widgets_position.php';
 }
-
+function generateSubMenuBgImg(){
+	include 'pages/set_background.php';
+}
 
 
 
